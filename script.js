@@ -367,7 +367,7 @@ modifyBtn.addEventListener("click", () => {
                 let item = shapesList[modifyElementIndex];
                 context.clearRect(item["start-point"].x - thickness, item["start-point"].y - thickness, item["end-point"].x - item["start-point"].x + thickness * 2, item["end-point"].y - item["start-point"].y + thickness * 2);
                 context.fillStyle = backgroundColor;
-                context.clearRect(item["start-point"].x - thickness, item["start-point"].y - thickness, item["end-point"].x - item["start-point"].x + thickness * 2, item["end-point"].y - item["start-point"].y + thickness * 2);
+                context.fillRect(item["start-point"].x - thickness, item["start-point"].y - thickness, item["end-point"].x - item["start-point"].x + thickness * 2, item["end-point"].y - item["start-point"].y + thickness * 2);
                 shapesList[modifyElementIndex]["start-point"] = { x: newStartX, y: newStartY };
                 shapesList[modifyElementIndex]["end-point"] = { x: newEndX, y: newEndY };
                 item = shapesList[modifyElementIndex];
