@@ -320,7 +320,7 @@ function showFiguresInList(shapesList) {
                 showFiguresInList(shapesList);
                 context.clearRect(item["start-point"].x - thickness, item["start-point"].y - thickness, item["end-point"].x - item["start-point"].x + thickness * 2, item["end-point"].y - item["start-point"].y + thickness * 2);
                 context.fillStyle = backgroundColor;
-                context.clearRect(item["start-point"].x - thickness, item["start-point"].y - thickness, item["end-point"].x - item["start-point"].x + thickness * 2, item["end-point"].y - item["start-point"].y + thickness * 2);
+                context.fillRect(item["start-point"].x - thickness, item["start-point"].y - thickness, item["end-point"].x - item["start-point"].x + thickness * 2, item["end-point"].y - item["start-point"].y + thickness * 2);
             } else if (item["shape"] === "ellipse") {
                 shapesList.splice(index, 1);
                 showFiguresInList(shapesList);
